@@ -11,7 +11,7 @@ LEARNING_RATE = 0.1
 # How valuable are future rewards? 
 DISCOUNT = 0.95
 # Training epochs.
-EPISODES = 2000
+EPISODES = 25000
 # How many episodes to wait in between rendering a given episode. 
 SHOW_EVERY = 500
 
