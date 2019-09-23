@@ -103,8 +103,5 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-# qtables
-qtables/*
-
-# qtable_charts
-qtable_charts/*
+Q-Learning/mountain_car/qtables/*
+Q-Learning/mountain_car/qtable_charts/*
