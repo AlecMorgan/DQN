@@ -102,3 +102,9 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# qtables
+qtables/*
+
+# qtable_charts
+qtable_charts/*

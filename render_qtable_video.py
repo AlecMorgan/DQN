@@ -12,6 +12,4 @@ for img_path in qtable_charts:
     frame = cv2.imread(f"qtable_charts/{img_path}")
     out.write(frame)
 
-#TODO(Alec): Debug video output.
-
 out.release()

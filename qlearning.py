@@ -2,6 +2,8 @@ import gym
 import numpy as np
 import matplotlib.pyplot as plt
 
+np.random.seed(0)
+
 env = gym.make("MountainCar-v0")
 env.reset()
 

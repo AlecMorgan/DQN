@@ -31,24 +31,12 @@ def get_q_color(value, vals):
     else:
         return "red", 0.3
 
-fig, axes = plt.subplots(3, 1)
+fig, axes = plt.subplots(3, 1, figsize=(12, 9))
 
 for i, file_name in enumerate(os.listdir("qtables"), start=1):
     q_table = np.load(f"qtables/{file_name}")
 
     if i % 100 == 0:
-        # for x, x_vals in enumerate(q_table):
-        #     for y, y_vals in enumerate(x_vals):
-        #         ax1, ax2, ax3 = axes
-        #         ax1.scatter(x, y, c=get_q_color(y_vals[0], y_vals)[0], marker="o", alpha=get_q_color(y_vals[0], y_vals)[1])
-        #         ax2.scatter(x, y, c=get_q_color(y_vals[1], y_vals)[0], marker="o", alpha=get_q_color(y_vals[1], y_vals)[1])
-        #         ax3.scatter(x, y, c=get_q_color(y_vals[2], y_vals)[0], marker="o", alpha=get_q_color(y_vals[2], y_vals)[1])
-
-        #         ax1.set_ylabel("Action 0")
-        #         ax2.set_ylabel("Action 1")
-        #         ax3.set_ylabel("Action 2")
-
-
         # TODO(Alec): Complete plotting refactor using array masking instead of for loops. 
         # for n, ax in enumerate(axes, start=0):
         #     x, y = q_table[n]
